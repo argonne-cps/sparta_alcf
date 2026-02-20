@@ -24,6 +24,7 @@ using namespace SPARTA_NS;
 RegCylinderKokkos::RegCylinderKokkos(SPARTA *sparta, int narg, char **arg) :
   RegCylinder(sparta, narg, arg)
 {
+  kokkos_flag = 1;
 }
 
 /* ---------------------------------------------------------------------- */

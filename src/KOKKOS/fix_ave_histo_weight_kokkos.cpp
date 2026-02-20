@@ -312,7 +312,7 @@ void FixAveHistoWeightKokkos::bin_particles(
 
   KokkosBase* regionKKBase = dynamic_cast<KokkosBase*>(region);
 
-  if (k_match.extent(0) > nmax)
+  if (k_match.extent(0) < nmax)
     MemKK::realloc_kokkos(k_match,"fix_ave_histo_weight:match",nmax);
 
   regionKKBase->match_all_kokkos(k_match);

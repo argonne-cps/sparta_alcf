@@ -24,6 +24,7 @@ using namespace SPARTA_NS;
 RegPlaneKokkos::RegPlaneKokkos(SPARTA *sparta, int narg, char **arg) :
   RegPlane(sparta, narg, arg)
 {
+  kokkos_flag = 1;
 }
 
 /* ---------------------------------------------------------------------- */

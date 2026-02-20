@@ -24,6 +24,7 @@ using namespace SPARTA_NS;
 RegSphereKokkos::RegSphereKokkos(SPARTA *sparta, int narg, char **arg) :
   RegSphere(sparta, narg, arg)
 {
+  kokkos_flag = 1;
 }
 
 /* ---------------------------------------------------------------------- */

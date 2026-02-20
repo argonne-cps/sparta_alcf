@@ -24,6 +24,7 @@ using namespace SPARTA_NS;
 RegBlockKokkos::RegBlockKokkos(SPARTA *sparta, int narg, char **arg) :
   RegBlock(sparta, narg, arg)
 {
+  kokkos_flag = 1;
 }
 
 /* ---------------------------------------------------------------------- */
