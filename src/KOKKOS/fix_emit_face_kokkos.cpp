@@ -458,13 +458,13 @@ void FixEmitFaceKokkos::operator()(TagFixEmitFace_perform_task, const int &i, in
         else x[2] = 0.0;
 
         if (region_flag == 1) {
-          if (regblock_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
+          if (!regblock_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
         } else if (region_flag == 2) {
-          if (regcylinder_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
+          if (!regcylinder_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
         } else if (region_flag == 3) {
-          if (regplane_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
+          if (!regplane_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
         } else if (region_flag == 4) {
-          if (regsphere_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
+          if (!regsphere_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
         }
 
         nactual++;
@@ -516,13 +516,13 @@ void FixEmitFaceKokkos::operator()(TagFixEmitFace_perform_task, const int &i, in
       else x[2] = 0.0;
 
       if (region_flag == 1) {
-        if (regblock_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
+        if (!regblock_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
       } else if (region_flag == 2) {
-        if (regcylinder_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
+        if (!regcylinder_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
       } else if (region_flag == 3) {
-        if (regplane_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
+        if (!regplane_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
       } else if (region_flag == 4) {
-        if (regsphere_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
+        if (!regsphere_kk_copy.obj.match_kokkos(x[0], x[1], x[2])) continue;
       }
 
       nactual++;
