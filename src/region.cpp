@@ -42,7 +42,7 @@ Region::Region(SPARTA *sparta, int, char **arg) : Pointers(sparta)
 
 Region::~Region()
 {
-  if (copymode) return;
+  if (copy || copymode) return;
 
   delete [] id;
   delete [] style;

@@ -85,6 +85,9 @@ FixEmitFaceKokkos::~FixEmitFaceKokkos()
 
   particle_kk_copy.uncopy();
   regblock_kk_copy.uncopy();
+  regcylinder_kk_copy.uncopy();
+  regplane_kk_copy.uncopy();
+  regsphere_kk_copy.uncopy();
 
 #ifdef SPARTA_KOKKOS_EXACT
   rand_pool.destroy();
